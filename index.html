@@ -7,11 +7,32 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="grille">
-        
-    </div>
+<body oncontextmenu="return false;">
+    <div id="main">
+        <div id="button-container">
+            <div id="buttons">
 
+            </div>
+            <div id="selected-color"></div>
+        </div>
+        <div class="center">
+            <div class="grille">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="addColorForm">
+        <form action="#">
+            <label> AJOUTER UNE COULEUR</label>
+            <input type="text" placeholder="Nom de la nouvelle couleur">
+            <input type="range" id="red" min="0" max="255" value="100">
+            <input type="range" id="green" min="0" max="255" value="100">
+            <input type="range" id="blue" min="0" max="255" value="100">
+            <div id="color-preview"></div>
+            <input type="submit" value="Ajouter la couleur">
+        </form>
+    </div>
     
     <script src="asset/js/script.js"></script>
 </body>
